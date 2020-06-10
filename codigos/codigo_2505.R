@@ -67,7 +67,7 @@ crear_tabla <- function(datos, formato = "r"){
         datos %>%
             acast(simulacion ~ edos, value.var = "prop") %>%
             kable(format = "latex", row.names = TRUE, booktabs = TRUE, align = 'c') %>%
-            kable_styling(latex_options = "striped", full_width = FALSE) %>%
+            kable_styling(full_width = FALSE) %>%
             print()
     }
 }
